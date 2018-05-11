@@ -1,0 +1,12 @@
+/Users/benjaminaburgess/Source/caliorbust/bin/Debug/netcoreapp2.0/caliorbust.deps.json
+/Users/benjaminaburgess/Source/caliorbust/bin/Debug/netcoreapp2.0/caliorbust.runtimeconfig.json
+/Users/benjaminaburgess/Source/caliorbust/bin/Debug/netcoreapp2.0/caliorbust.runtimeconfig.dev.json
+/Users/benjaminaburgess/Source/caliorbust/bin/Debug/netcoreapp2.0/caliorbust.dll
+/Users/benjaminaburgess/Source/caliorbust/bin/Debug/netcoreapp2.0/caliorbust.pdb
+/Users/benjaminaburgess/Source/caliorbust/obj/Debug/netcoreapp2.0/caliorbust.csprojResolveAssemblyReference.cache
+/Users/benjaminaburgess/Source/caliorbust/obj/Debug/netcoreapp2.0/caliorbust.csproj.CoreCompileInputs.cache
+/Users/benjaminaburgess/Source/caliorbust/obj/Debug/netcoreapp2.0/UserSecretsAssemblyInfo.cs
+/Users/benjaminaburgess/Source/caliorbust/obj/Debug/netcoreapp2.0/caliorbust.AssemblyInfoInputs.cache
+/Users/benjaminaburgess/Source/caliorbust/obj/Debug/netcoreapp2.0/caliorbust.AssemblyInfo.cs
+/Users/benjaminaburgess/Source/caliorbust/obj/Debug/netcoreapp2.0/caliorbust.dll
+/Users/benjaminaburgess/Source/caliorbust/obj/Debug/netcoreapp2.0/caliorbust.pdb
