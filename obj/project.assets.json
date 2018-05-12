@@ -13259,28 +13259,33 @@
     ]
   },
   "packageFolders": {
-    "/Users/benjaminaburgess/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\Benjamin Burgess\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/benjaminaburgess/Source/caliorbust/caliorbust.csproj",
-      "projectName": "caliorbust",
-      "projectPath": "/Users/benjaminaburgess/Source/caliorbust/caliorbust.csproj",
-      "packagesPath": "/Users/benjaminaburgess/.nuget/packages/",
-      "outputPath": "/Users/benjaminaburgess/Source/caliorbust/obj",
+      "projectUniqueName": "C:\\Users\\Benjamin Burgess\\Source\\Repos\\Or-Bust\\OrBust.csproj",
+      "projectName": "OrBust",
+      "projectPath": "C:\\Users\\Benjamin Burgess\\Source\\Repos\\Or-Bust\\OrBust.csproj",
+      "packagesPath": "C:\\Users\\Benjamin Burgess\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Benjamin Burgess\\Source\\Repos\\Or-Bust\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/benjaminaburgess/.config/NuGet/NuGet.Config"
+        "C:\\Users\\Benjamin Burgess\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -13297,23 +13302,22 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Microsoft.NETCore.App": {
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "2.0",
-            "autoReferenced": true
-          },
           "Microsoft.AspNetCore.All": {
             "target": "Package",
-            "version": "2.0.8"
+            "version": "[2.0.8, )"
           },
           "Microsoft.EntityFrameworkCore.Tools": {
             "target": "Package",
-            "version": "2.0.3"
+            "version": "[2.0.3, )"
+          },
+          "Microsoft.NETCore.App": {
+            "target": "Package",
+            "version": "[2.0.0, )",
+            "autoReferenced": true
           },
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
-            "version": "2.0.4"
+            "version": "[2.0.4, )"
           }
         },
         "imports": [

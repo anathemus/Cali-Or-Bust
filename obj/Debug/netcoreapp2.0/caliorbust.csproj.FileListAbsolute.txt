@@ -10,3 +10,15 @@
 /Users/benjaminaburgess/Source/caliorbust/obj/Debug/netcoreapp2.0/caliorbust.AssemblyInfo.cs
 /Users/benjaminaburgess/Source/caliorbust/obj/Debug/netcoreapp2.0/caliorbust.dll
 /Users/benjaminaburgess/Source/caliorbust/obj/Debug/netcoreapp2.0/caliorbust.pdb
+C:\Users\Benjamin Burgess\Source\Repos\Cali-Or-Bust\obj\Debug\netcoreapp2.0\caliorbust.csproj.CoreCompileInputs.cache
+C:\Users\Benjamin Burgess\Source\Repos\Cali-Or-Bust\obj\Debug\netcoreapp2.0\caliorbust.AssemblyInfoInputs.cache
+C:\Users\Benjamin Burgess\Source\Repos\Cali-Or-Bust\obj\Debug\netcoreapp2.0\caliorbust.AssemblyInfo.cs
+C:\Users\Benjamin Burgess\Source\Repos\Cali-Or-Bust\obj\Debug\netcoreapp2.0\caliorbust.dll
+C:\Users\Benjamin Burgess\Source\Repos\Cali-Or-Bust\obj\Debug\netcoreapp2.0\caliorbust.pdb
+C:\Users\Benjamin Burgess\Source\Repos\Cali-Or-Bust\bin\Debug\netcoreapp2.0\caliorbust.deps.json
+C:\Users\Benjamin Burgess\Source\Repos\Cali-Or-Bust\bin\Debug\netcoreapp2.0\caliorbust.runtimeconfig.json
+C:\Users\Benjamin Burgess\Source\Repos\Cali-Or-Bust\bin\Debug\netcoreapp2.0\caliorbust.runtimeconfig.dev.json
+C:\Users\Benjamin Burgess\Source\Repos\Cali-Or-Bust\bin\Debug\netcoreapp2.0\caliorbust.dll
+C:\Users\Benjamin Burgess\Source\Repos\Cali-Or-Bust\bin\Debug\netcoreapp2.0\caliorbust.pdb
+C:\Users\Benjamin Burgess\Source\Repos\Cali-Or-Bust\obj\Debug\netcoreapp2.0\caliorbust.csprojResolveAssemblyReference.cache
+C:\Users\Benjamin Burgess\Source\Repos\Cali-Or-Bust\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
