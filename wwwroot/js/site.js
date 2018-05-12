@@ -25,4 +25,10 @@ $(document).ready(function () {
             alert("Error in continue1 button set!");
         }
     });
+
+    $("input[type='button'][id='firstButton']").click(function () {
+        $("#hidden1").removeClass("invisible");
+        $("#firstButton").button("dispose");
+        $(".first").addClass("invisible");
+    });
 })

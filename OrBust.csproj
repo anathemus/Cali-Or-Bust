@@ -9,9 +9,13 @@
 
   <ItemGroup>
     <Compile Remove="caliorbustTests\**" />
+    <Compile Remove="OrBustTests\**" />
     <Content Remove="caliorbustTests\**" />
+    <Content Remove="OrBustTests\**" />
     <EmbeddedResource Remove="caliorbustTests\**" />
+    <EmbeddedResource Remove="OrBustTests\**" />
     <None Remove="caliorbustTests\**" />
+    <None Remove="OrBustTests\**" />
   </ItemGroup>
 
 
