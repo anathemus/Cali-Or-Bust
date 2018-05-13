@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
 
-namespace caliorbust.Models.ManageViewModels
+namespace OrBust.Models.ManageViewModels
 {
     public class ExternalLoginsViewModel
     {

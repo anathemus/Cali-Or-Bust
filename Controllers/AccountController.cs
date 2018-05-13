@@ -10,11 +10,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using caliorbust.Models;
-using caliorbust.Models.AccountViewModels;
-using caliorbust.Services;
+using OrBust.Models;
+using OrBust.Models.AccountViewModels;
+using OrBust.Services;
 
-namespace caliorbust.Controllers
+namespace OrBust.Controllers
 {
     [Authorize]
     [Route("[controller]/[action]")]

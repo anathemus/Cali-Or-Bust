@@ -4,9 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using caliorbust.Models;
+using OrBust.Models;
 
-namespace caliorbust.Data
+namespace OrBust.Data
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {

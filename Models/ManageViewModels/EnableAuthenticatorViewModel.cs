@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 
-namespace caliorbust.Models.ManageViewModels
+namespace OrBust.Models.ManageViewModels
 {
     public class EnableAuthenticatorViewModel
     {

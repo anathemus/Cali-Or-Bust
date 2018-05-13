@@ -4,9 +4,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using caliorbust.Models;
+using OrBust.Models;
 
-namespace caliorbust.Controllers
+namespace OrBust.Controllers
 {
     public class HomeController : Controller
     {

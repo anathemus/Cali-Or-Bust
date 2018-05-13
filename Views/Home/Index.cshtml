@@ -1,4 +1,4 @@
-﻿@model OrBust.Models.ResponseModel;
+﻿@model OrBust.Models.OrBustFirstProgress;
 
 @{
     ViewData["Title"] = "First";
@@ -37,47 +37,54 @@
             </p>
         </div>
         <div id="response1">
-            <form asp-controller="ResponseContrl" asp-action="ResponseOne" method="post">
+            <form asp-controller="ResponseContrl" asp-action="ResponseOne" id="responseOneForm" method="post">
                 <div class="row justify-content-center col-auto" id="response1">
                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
                         <label class="btn btn-success active">
-                            <input type="radio" name="continue1" id="continue1Op1" autocomplete="off" checked /> Your discriptions are
-                            helpful.
+                            <input type="radio" name="continue1" id="continue1Op1" autocomplete="off" value="Your discriptions are
+                            helpful." checked />Your discriptions are helpful.
                         </label>
                         <label class="btn btn-danger">
-                            <input type="radio" name="continue1" id="continue1Op0" autocomplete="off" /> Get to the point, please.
+                            <input type="radio" name="continue1" id="continue1Op0" autocomplete="off" value="Get to the point, please." />Get
+                            to the point, please.
                         </label>
                     </div>
                 </div>
                 <div class="row justify-content-center col-auto pt-2">
-                    <input class="btn btn-primary" id="submit1" type="button" value="Submit">
+                    <input class="btn btn-primary" id="submit1" type="button" value="Submit" aria-describedby="responseOneSelection">
+                </div>
+                <div class="row justify-content-center col-auto">
+                    <small id="responseOneSelection" class="text-muted">When a choice like this appears, make your selection and press submit.<br />
+                    You only get one choice, then the buttons disappear.</small>
                 </div>
             </form>
         </div>
     </div>
     <div class="invisible" id="hidden2">
-        <p>@Html.DisplayFor(model => model.FirstResponse)</p>
-        <p>
-            Moving away, moving out of Miami is an issue that, I feel, hasn't been resolved. It needs a resolution. I have a
-            new destinaion in mind that you've actually mentioned before. We need to discuss and resolve this, as a couple.
-            In the past, conversations about this have been rough. I came up with this interactive website idea to see if
-            things might go better this time. Not necessarily where I get my way, but at least so that this round the
-            conversation can continue if it gets rocky.
-            I know you have a lot of good memories in this city. You have your friends,
-            and your "network". You were born here. You've grown up here. You married me here. Our son was born here. Our
-            next child will be born here as well. These are points that you already know along with, I think / hope, how much I
-            detest living in this city.<br />
-        </p>
-    </div>
-    <div class="row justify-content-center">
-        <div class="col-auto">
-            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                <label class="btn btn-success active">
-                    <input type="radio" name="continue2" id="continue2Op1" autocomplete="off" checked /> Ok, continue
-                </label>
-                <label class="btn btn-danger">
-                    <input type="radio" name="continue2" id="continue2Op0" autocomplete="off" /> Let's discuss this later.
-                </label>
+        <div class="row col-10 offset-1 col-md-8 offset-md-2">
+            <p id="firstResponse"></p>
+            <p>
+                Moving away, moving out of Miami is an issue that, I feel, hasn't been resolved. It needs a resolution. I have a
+                new destinaion in mind that you've actually mentioned before. We need to discuss and resolve this, as a couple.
+                In the past, conversations about this have been rough. I came up with this interactive website idea to see if
+                things might go better this time. Not necessarily where I get my way, but at least so that this round the
+                conversation can continue if it gets rocky.
+                I know you have a lot of good memories in this city. You have your friends,
+                and your "network". You were born here. You've grown up here. You married me here. Our son was born here. Our
+                next child will be born here as well. These are points that you already know along with, I think / hope, how much I
+                detest living in this city.<br />
+            </p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-success active">
+                        <input type="radio" name="continue2" id="continue2Op1" autocomplete="off" checked /> Ok, continue
+                    </label>
+                    <label class="btn btn-danger">
+                        <input type="radio" name="continue2" id="continue2Op0" autocomplete="off" /> Let's discuss this later.
+                    </label>
+                </div>
             </div>
         </div>
     </div>
@@ -85,27 +92,28 @@
 
 @section scripts
     {
-    <script>
-        $(document).ready(function () {
-            $('#submit1').on('click', '.btn', function (event) {
+<script>
+    $("input[type='button'][id='submit1']").click(function () {
 
-                var firstResponseVal = $("input[name='continue1']").val();
+        var firstResponseVal = $("input[name='continue1']:checked").val();
+        var action = $("#responseOneForm").attr("action");
 
-                $.ajax({
-                    url: '@Url.Action("ResponseContrl", "ResponseOne")',
-                    data: { FirstResponse: firstResponseVal },
-                    contentType: 'application/json',
-                    dataType: 'html',
-                    type: 'GET',
-                    cache: false,
-                    success: function (data) {
-                        $('#response1').html(data);
-                    },
-                    error: function (jqXHR, textStatus) {
-                        alert('jqXHR.statusCode');
-                    }
-                });
-            });
-        });
-    </script>
+        $.ajax({
+            url: action,
+            data: { FirstResponse : firstResponseVal },
+    contentType: 'application/json',
+    dataType: 'json',
+    type: 'POST',
+    cache: false,
+    success: function (data) {
+    $('#response1').html(data);
+    },
+    });
+
+    $("p[id='firstResponse']").append(firstResponseVal);
+
+    $("#hidden2").removeClass("invisible");
+    $("#response1").addClass("invisible");
+    });
+</script>
 }

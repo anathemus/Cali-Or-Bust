@@ -8,11 +8,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using caliorbust.Data;
-using caliorbust.Models;
-using caliorbust.Services;
+using OrBust.Data;
+using OrBust.Models;
+using OrBust.Services;
 
-namespace caliorbust
+namespace OrBust
 {
     public class Startup
     {

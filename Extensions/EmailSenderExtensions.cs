@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
-using caliorbust.Services;
+using OrBust.Services;
 
-namespace caliorbust.Services
+namespace OrBust.Services
 {
     public static class EmailSenderExtensions
     {

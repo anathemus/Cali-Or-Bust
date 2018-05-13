@@ -1,6 +1,6 @@
 using System;
 
-namespace caliorbust.Models
+namespace OrBust.Models
 {
     public class ErrorViewModel
     {

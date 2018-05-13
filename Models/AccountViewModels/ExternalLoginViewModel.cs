@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace caliorbust.Models.AccountViewModels
+namespace OrBust.Models.AccountViewModels
 {
     public class ExternalLoginViewModel
     {
