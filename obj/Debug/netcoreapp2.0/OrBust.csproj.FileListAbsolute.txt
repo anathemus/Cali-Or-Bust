@@ -21,4 +21,3 @@ C:\Users\Benjamin Burgess\Source\Repos\Or-Bust\obj\Debug\netcoreapp2.0\OrBust.As
 C:\Users\Benjamin Burgess\Source\Repos\Or-Bust\obj\Debug\netcoreapp2.0\OrBust.AssemblyInfo.cs
 C:\Users\Benjamin Burgess\Source\Repos\Or-Bust\obj\Debug\netcoreapp2.0\OrBust.dll
 C:\Users\Benjamin Burgess\Source\Repos\Or-Bust\obj\Debug\netcoreapp2.0\OrBust.pdb
-C:\Users\Benjamin Burgess\Source\Repos\Or-Bust\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs

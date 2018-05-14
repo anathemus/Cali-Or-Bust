@@ -1,0 +1,14 @@
+C:\Users\Benjamin Burgess\Source\Repos\Or-Bust\OrBustTests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Benjamin Burgess\Source\Repos\Or-Bust\OrBustTests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Benjamin Burgess\Source\Repos\Or-Bust\OrBustTests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Benjamin Burgess\Source\Repos\Or-Bust\OrBustTests\bin\Debug\netcoreapp2.0\OrBustTests.deps.json
+C:\Users\Benjamin Burgess\Source\Repos\Or-Bust\OrBustTests\bin\Debug\netcoreapp2.0\OrBustTests.runtimeconfig.json
+C:\Users\Benjamin Burgess\Source\Repos\Or-Bust\OrBustTests\bin\Debug\netcoreapp2.0\OrBustTests.runtimeconfig.dev.json
+C:\Users\Benjamin Burgess\Source\Repos\Or-Bust\OrBustTests\bin\Debug\netcoreapp2.0\OrBustTests.dll
+C:\Users\Benjamin Burgess\Source\Repos\Or-Bust\OrBustTests\bin\Debug\netcoreapp2.0\OrBustTests.pdb
+C:\Users\Benjamin Burgess\Source\Repos\Or-Bust\OrBustTests\obj\Debug\netcoreapp2.0\OrBustTests.csprojResolveAssemblyReference.cache
+C:\Users\Benjamin Burgess\Source\Repos\Or-Bust\OrBustTests\obj\Debug\netcoreapp2.0\OrBustTests.csproj.CoreCompileInputs.cache
+C:\Users\Benjamin Burgess\Source\Repos\Or-Bust\OrBustTests\obj\Debug\netcoreapp2.0\OrBustTests.AssemblyInfoInputs.cache
+C:\Users\Benjamin Burgess\Source\Repos\Or-Bust\OrBustTests\obj\Debug\netcoreapp2.0\OrBustTests.AssemblyInfo.cs
+C:\Users\Benjamin Burgess\Source\Repos\Or-Bust\OrBustTests\obj\Debug\netcoreapp2.0\OrBustTests.dll
+C:\Users\Benjamin Burgess\Source\Repos\Or-Bust\OrBustTests\obj\Debug\netcoreapp2.0\OrBustTests.pdb

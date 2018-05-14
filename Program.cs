@@ -7,6 +7,7 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using OrBust.Services;
 
 namespace OrBust
 {
@@ -21,6 +22,7 @@ namespace OrBust
             WebHost.CreateDefaultBuilder(args)
                 .UseApplicationInsights()
                 .UseStartup<Startup>()
+                .UseKestrel(options => options.ConfigureEndpoints())
                 .Build();
     }
 }
