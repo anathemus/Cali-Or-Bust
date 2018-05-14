@@ -30,17 +30,38 @@
                     <a class="nav-link text-white" asp-controller="Home" asp-action="Index">First</a>
                 </li>
                 <li class="nav-item dropdown px-2">
-                    <a class="nav-link dropdown-toggle bg-success disabled" href="#" id="texasProDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
+                    <a class="nav-link dropdown-toggle bg-success invisible nav-invisible" href="#" id="texasProDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Pro Texas</span>
                         <span class="stateface stateface-tx"></span>
-                        <span class="oi oi-lock-locked"></span>
+                        <span class="oi oi-plus"></span>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="texasProDropdown">
-                        <a class="dropdown-item" asp-controller="Home" asp-action="About">The Issues</a>
-                        <a class="dropdown-item" asp-controller="Home" asp-action="Contact">Contact</a>
+                        <a class="dropdown-item" asp-controller="Home" asp-action="About">Jobs</a>
+                        <a class="dropdown-item" asp-controller="Home" asp-action="Contact">Cost of Living</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown px-2">
+                    <a class="nav-link dropdown-toggle bg-primary invisible nav-invisible" href="#" id="contentionDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">In Contention</span>
+                        <span class="oi oi-loop"></span>
+                        <span class="oi oi-warning"></span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="contentionDropdown">
+                        <a class="dropdown-item" href="#">Friends</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown px-2">
+                    <a class="nav-link dropdown-toggle bg-success invisible nav-invisible" href="#" id="floridaProDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Pro Florida</span>
+                        <span class="stateface stateface-fl"></span>
+                        <span class="oi oi-plus"></span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="floridaProDropdown">
+                        <a class="dropdown-item" href="#">Disney</a>
                     </div>
                 </li>
             </ul>
+            <div class="nav-divider"></div>
             @await Html.PartialAsync("_LoginPartial")
         </div>
     </nav>

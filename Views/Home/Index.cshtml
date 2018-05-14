@@ -54,66 +54,177 @@
                     <input class="btn btn-primary" id="submit1" type="button" value="Submit" aria-describedby="responseOneSelection">
                 </div>
                 <div class="row justify-content-center col-auto">
-                    <small id="responseOneSelection" class="text-muted">When a choice like this appears, make your selection and press submit.<br />
-                    You only get one choice, then the buttons disappear.</small>
+                    <small id="responseOneSelection" class="text-muted">
+                        When a choice like this appears, make your selection and press submit.<br />
+                        You only get one choice, then the buttons disappear.
+                    </small>
                 </div>
             </form>
         </div>
     </div>
     <div class="invisible" id="hidden2">
         <div class="row col-10 offset-1 col-md-8 offset-md-2">
-            <p id="firstResponse"></p>
+            <small>
+                From here on out, instead of putting words in your mouth, you'll have Agreed / Opposed options and a box
+                to enter text.
+            </small><br /><br />
             <p>
-                Moving away, moving out of Miami is an issue that, I feel, hasn't been resolved. It needs a resolution. I have a
-                new destinaion in mind that you've actually mentioned before. We need to discuss and resolve this, as a couple.
-                In the past, conversations about this have been rough. I came up with this interactive website idea to see if
-                things might go better this time. Not necessarily where I get my way, but at least so that this round the
-                conversation can continue if it gets rocky.
+                Anyhow, with my thinking: This pursuit of a career has been rough. One more test and
+                I'll have my final Microsoft Certifications. September, I'll have my degree at last. I'll keep looking and
+                applying as I have for the past 2 plus years. These are great, but they're not magic bullets. All but one feedback
+                I've gotten has been "Too junior / not enough experience". The outlier was that interview for Orlando where I
+                rated myself too high.
+
+                I've been thinking, too, about our financial situation, our future kiddo, the mess in our room, our future, etc.
+                You might / probably have already figured out where I'm going with this. But, I've taken a different approach this
+                time, and have come up with a different location that I think you might, I hope, be open to.
+
+                Texas. Dallas or Austin, but Dallas has Tati. I've confirmed with her that she's probably not going anywhere for
+                a while (her Mom doesn't know yet.). It's not as far as Cali, It's warm, there's a lot of advantages.
+
+                I'd like to discuss this with you. Either in person, or through the medium of this website. I made this because
+                the other times I've brought up leaving Miami have seemed heated and shut down quickly without much talking things
+                out.
+
                 I know you have a lot of good memories in this city. You have your friends,
                 and your "network". You were born here. You've grown up here. You married me here. Our son was born here. Our
-                next child will be born here as well. These are points that you already know along with, I think / hope, how much I
-                detest living in this city.<br />
+                next child will be born here as well (Yes, one way or another even if it's like what Tati did. But, let me not
+                get ahead of myself.).
+                <br />
             </p>
         </div>
-        <div class="row justify-content-center">
-            <div class="col-auto">
-                <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                    <label class="btn btn-success active">
-                        <input type="radio" name="continue2" id="continue2Op1" autocomplete="off" checked /> Ok, continue
-                    </label>
-                    <label class="btn btn-danger">
-                        <input type="radio" name="continue2" id="continue2Op0" autocomplete="off" /> Let's discuss this later.
-                    </label>
+        <div id="response2">
+            <form asp-controller="ResponseContrlTwo" asp-action="ResponseTwo" id="responseTwoForm" method="post">
+                <div class="row justify-content-center form-group">
+                    <div class="col-auto">
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-success active">
+                                <input type="radio" class="form-control" name="continue2" id="continue2Op1" autocomplete="off" value="Agreed" checked /> Agreed
+                            </label>
+                            <label class="btn btn-danger">
+                                <input type="radio" class="form-control" name="continue2" id="continue2Op0" autocomplete="off" value="Opposed" /> Opposed
+                            </label>
+                        </div>
+                    </div>
                 </div>
-            </div>
+                <div class="row justify-content-center col-auto pt-2 input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Response</span>
+                    </div>
+                    <textarea class="form-control" id="responseTextTwo" aria-label="Response" minlength="3"></textarea>
+                </div>
+                <div class="row justify-content-center col-auto pt-2">
+                    <input class="btn btn-primary" id="submit2" type="button" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="invisible" id="hidden3">
+        <div class="row col-10 offset-1 col-md-8 offset-md-2">
+            <p>
+                Above, you now see three dropdown menus. The ones on he right and left are pretty self-explanatory: Pro Texas and
+                Pro Florida. The one in the middle is for neutral, in contention, or in debate. Each contains topics. You will have
+                the ability to add topics. Each topic will have posts/subtopics to sway the category in one direction or the other.
+                The poster will be able to select which direction they feel the post/subtopic pushes the category. Each can vote
+                Agree / Opposed along with some text for discussion. If you like, we can also bring your mother into the discussion
+                where she has a stake in this. Entirely up to you.
+
+                Or we can talk this over. I'm all for it, so long as the conversation does not drop off. We need to reach a consensus,
+                my dear. To me, the situation here looks bleak and looks more so by the day. Please know that if I have to, I'll go alone
+                (I probably will for the first 3 months anyway to get insurance and set up) and fly back everyweekend if it means a
+                better life for us. I love you. In the end, i really want what's best for all of us. We need to figure that out, and time,
+                I feel is of the essence.
+            </p>
+        </div>
+        <div id="response3">
+            <form asp-controller="ResponseContrlThree" asp-action="ResponseThree" id="responseThreeForm" method="post">
+                <div class="row justify-content-center form-group">
+                    <div class="col-auto">
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons" aria-describedby="responseThreeSelection">
+                            <label class="btn btn-success active">
+                                <input type="radio" class="form-control" name="continue3" id="continue3Op1" autocomplete="off" value="Go ahead with
+                                       the website." checked />Go ahead with the website.
+                            </label>
+                            <label class="btn btn-info">
+                                <input type="radio" class="form-control" name="continue3" id="continue3Op2" autocomplete="off" value="Let's
+                                       talk this over" />Let's talk this over.
+                            </label>
+                            <label class="btn btn-danger">
+                                <input type="radio" class="form-control" name="continue3" id="continue3Op0" autocomplete="off" value="I
+                                       don't want to talk about this." />I don't want to talk about this.
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center col-auto">
+                    <small id="responseThreeSelection" class="text-muted">
+                        Ok. Last time, I swear.
+                    </small>
+                </div>
+                <div class="row justify-content-center col-auto pt-2 input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Response</span>
+                    </div>
+                    <textarea class="form-control" id="responseTextThree" aria-label="Response" minlength="3"></textarea>
+                </div>
+                <div class="row justify-content-center col-auto pt-2">
+                    <input class="btn btn-primary" id="submit3" type="button" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="invisible" id="hidden4">
+        <div class="row col-10 offset-1 col-md-8 offset-md-2">
+            <p>Ok, I've been emailed your responses. I'll read them over and either keep working on the site
+            or talk with you. I love you a lot. Remember that, always.</p>
         </div>
     </div>
 </div>
 
 @section scripts
     {
-<script>
-    $("input[type='button'][id='submit1']").click(function () {
+    <script>
+        $("input[type='button'][id='submit1']").click(function () {
 
-        var firstResponseVal = $("input[name='continue1']:checked").val();
-        var action = $("#responseOneForm").attr("action");
+            var firstResponseVal = $("input[name='continue1']:checked").val();
+            var action = $("#responseOneForm").attr("action");
 
-        $.ajax({
-            url: action,
-            data: { FirstResponse : firstResponseVal },
-    contentType: 'application/json',
-    dataType: 'json',
-    type: 'POST',
-    cache: false,
-    success: function (data) {
-    $('#response1').html(data);
-    },
-    });
+            $.ajax({
+                url: action,
+                data: { FirstResponse: firstResponseVal },
+                contentType: 'application/json',
+                dataType: 'json',
+                type: 'POST',
+                cache: false,
+                success: function (data) {
+                    $('#response1').html(data);
+                },
+            });
 
-    $("p[id='firstResponse']").append(firstResponseVal);
+            $("#hidden2").removeClass("invisible");
+            $("#response1").addClass("invisible");
+        });
 
-    $("#hidden2").removeClass("invisible");
-    $("#response1").addClass("invisible");
-    });
-</script>
+        $("input[type='button'][id='submit3']").click(function () {
+
+            var thirdResponseVal = $("input[name='continue3']:checked").val();
+            var thirdResponseText = $("textarea[id='responseTextThree']").val();
+            var action = $("#responseThreeForm").attr("action");
+
+            $.ajax({
+                url: action,
+                data: { ThirdResponse: thirdResponseVal, ThirdResponseText: thirdResponseText },
+                contentType: 'application/json',
+                dataType: 'json',
+                type: 'POST',
+                cache: false,
+                success: function (data) {
+                    $('#response3').html(data);
+                },
+            });
+
+            $("#hidden4").removeClass("invisible");
+            $("#response3").addClass("invisible");
+        });
+    </script>
 }
