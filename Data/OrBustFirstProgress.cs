@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
-namespace OrBust.Models
+namespace OrBust.Data
 {
+    [Table("First_Progress")]
     public class OrBustFirstProgress
     {
         public string UserName { get; private set; }

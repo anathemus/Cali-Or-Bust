@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace OrBust.Models
+namespace OrBust.Data
 {
     public class OrBustDbContext : DbContext
     {
@@ -13,6 +13,11 @@ namespace OrBust.Models
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer("DefaultConnection");
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<OrBustFirstProgress>().ToTable("FirstProgress");
         }
     }
 }

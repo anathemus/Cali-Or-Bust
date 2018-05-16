@@ -5,7 +5,7 @@
     <UserSecretsId>aspnet-caliorbust-69822E89-7A17-42D7-8548-BA73FC75CC78</UserSecretsId>
     <ApplicationInsightsResourceId>/subscriptions/cffea5ad-e6bf-4078-8f58-9cc78e8a66bb/resourcegroups/Default-ApplicationInsights-EastUS/providers/microsoft.insights/components/caliorbust</ApplicationInsightsResourceId>
     <ApplicationInsightsAnnotationResourceId>/subscriptions/cffea5ad-e6bf-4078-8f58-9cc78e8a66bb/resourcegroups/Default-ApplicationInsights-EastUS/providers/microsoft.insights/components/caliorbust</ApplicationInsightsAnnotationResourceId>
-    <ApplicationIcon>wwwroot\favicon.ico</ApplicationIcon>
+    <ApplicationIcon></ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -19,16 +19,22 @@
     <None Remove="OrBustTests\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Properties\PublishProfiles\baborbust - Web Deploy.pubxml" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.3" />
     <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="2.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="2.0.2" />
     <PackageReference Include="Microsoft.jQuery.Unobtrusive.Ajax" Version="3.2.5" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.4" />
   </ItemGroup>
 
   <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" />
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
   </ItemGroup>
 
@@ -37,7 +43,18 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Properties\PublishProfiles\" />
     <Folder Include="wwwroot\fonts\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\favicon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="wwwroot\favicon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

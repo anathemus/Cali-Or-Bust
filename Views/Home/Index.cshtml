@@ -1,9 +1,13 @@
-﻿@model OrBust.Models.OrBustFirstProgress;
+﻿@using System.Net.Mail;
+@using System.Net;
+@model OrBust.Data.OrBustFirstProgress;
 
 @{
     ViewData["Title"] = "First";
     ViewData["JumbotronImage"] = "/images/OrBust.jpg";
 }
+
+<input class="invisible" id="UserName" value="@this.User.Identity.Name" />
 <div class="container">
     <div class="row">
         <div class="col-10 offset-1 col-md-8 offset-md-2">
@@ -184,9 +188,16 @@
 @section scripts
     {
     <script>
+
+        var firstResponseVal;
+        var secondResponseVal;
+        var secondResponseText;
+        var thirdResponseVal;
+        var thirdResponseText;
+
         $("input[type='button'][id='submit1']").click(function () {
 
-            var firstResponseVal = $("input[name='continue1']:checked").val();
+            firstResponseVal = $("input[name='continue1']:checked").val();
             var action = $("#responseOneForm").attr("action");
 
             $.ajax({
@@ -205,10 +216,33 @@
             $("#response1").addClass("invisible");
         });
 
+        $("input[type='button'][id='submit2']").click(function () {
+
+            secondResponseVal = $("input[name='continue2']:checked").val();
+            secondResponseText = $("textarea[id='responseTextTwo']").val();
+            var action = $("#responseTwoForm").attr("action");
+
+            $.ajax({
+                url: action,
+                data: { SecondResponseVal: secondResponseVal, SecondResponseText: secondResponseText },
+                contentType: 'application/json',
+                dataType: 'json',
+                type: 'POST',
+                cache: false,
+                success: function (data) {
+                    $('#response2').html(data);
+                },
+            });
+
+            $("#hidden3").removeClass("invisible");
+            $(".nav-invisible").removeClass("invisible");
+            $("#response2").addClass("invisible");
+        });
+
         $("input[type='button'][id='submit3']").click(function () {
 
-            var thirdResponseVal = $("input[name='continue3']:checked").val();
-            var thirdResponseText = $("textarea[id='responseTextThree']").val();
+            thirdResponseVal = $("input[name='continue3']:checked").val();
+            thirdResponseText = $("textarea[id='responseTextThree']").val();
             var action = $("#responseThreeForm").attr("action");
 
             $.ajax({
@@ -222,6 +256,24 @@
                     $('#response3').html(data);
                 },
             });
+
+             
+            var result = "User Name: " + $("#UserName").val() + "<br /> First Response: " + firstResponseVal +
+                "<br /> Second Response: " + secondResponseVal + "<br /> Text of Second Response: " + secondResponseText
+                + "<br /> Third Response: " + thirdResponseVal + "<br /> Text of Third Response: " + thirdResponseText;
+
+            $.ajax({
+                url: "/Home/SendEmail",
+                data: { message: result },
+                contentType: 'application/json',
+                dataType: 'json',
+                type: 'GET',
+                cache: false,
+                success: function (data) {
+                    alert("An automated email has been sent!");
+                }
+
+            })
 
             $("#hidden4").removeClass("invisible");
             $("#response3").addClass("invisible");

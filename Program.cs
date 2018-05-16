@@ -22,7 +22,7 @@ namespace OrBust
             WebHost.CreateDefaultBuilder(args)
                 .UseApplicationInsights()
                 .UseStartup<Startup>()
-                .UseKestrel(options => options.ConfigureEndpoints())
+                //.UseKestrel(options => options.ConfigureEndpoints())
                 .Build();
     }
 }

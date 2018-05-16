@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using OrBust.Data;
 using OrBust.Models;
 using OrBust.Services;
+using Microsoft.Extensions.Logging;
 
 namespace OrBust
 {
@@ -34,15 +35,27 @@ namespace OrBust
                 .AddDefaultTokenProviders();
 
             // Add application services.
+
+            //Add Google Authentication
             services.AddAuthentication().AddGoogle(googleOptions =>
             {
-                googleOptions.ClientId = Configuration["Authentication:Google:ClientId"];
-                googleOptions.ClientSecret = Configuration["Authentication:Google:ClientSecret"];
+                googleOptions.ClientId = "953871450148-1fnnuor3qiecnuaorbkd8ljiu9kqnnlb.apps.googleusercontent.com";
+                googleOptions.ClientSecret = "LmMMOMp6P1Rw5XUsrv2L2MYV";
             });
+
+            //Add Facebook Authentication
+            services.AddAuthentication().AddFacebook(facebookOptions =>
+            {
+                facebookOptions.AppId = "638852886506500";
+                facebookOptions.AppSecret = "06a59957914aae3a9365742cae4949d8";
+            });
+
+
 
             services.AddTransient<IEmailSender, EmailSender>();
 
             services.AddMvc();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -69,5 +82,6 @@ namespace OrBust
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
         }
+
     }
 }

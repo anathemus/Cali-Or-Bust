@@ -1,0 +1,13 @@
+C:\Users\Benjamin Burgess\Source\Repos\Or-Bust\bin\Release\netcoreapp2.0\OrBust.deps.json
+C:\Users\Benjamin Burgess\Source\Repos\Or-Bust\bin\Release\netcoreapp2.0\OrBust.runtimeconfig.json
+C:\Users\Benjamin Burgess\Source\Repos\Or-Bust\bin\Release\netcoreapp2.0\OrBust.runtimeconfig.dev.json
+C:\Users\Benjamin Burgess\Source\Repos\Or-Bust\bin\Release\netcoreapp2.0\OrBust.dll
+C:\Users\Benjamin Burgess\Source\Repos\Or-Bust\bin\Release\netcoreapp2.0\OrBust.pdb
+C:\Users\Benjamin Burgess\Source\Repos\Or-Bust\obj\Release\netcoreapp2.0\OrBust.csprojResolveAssemblyReference.cache
+C:\Users\Benjamin Burgess\Source\Repos\Or-Bust\obj\Release\netcoreapp2.0\OrBust.csproj.CoreCompileInputs.cache
+C:\Users\Benjamin Burgess\Source\Repos\Or-Bust\obj\Release\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\Benjamin Burgess\Source\Repos\Or-Bust\obj\Release\netcoreapp2.0\OrBust.AssemblyInfoInputs.cache
+C:\Users\Benjamin Burgess\Source\Repos\Or-Bust\obj\Release\netcoreapp2.0\OrBust.AssemblyInfo.cs
+C:\Users\Benjamin Burgess\Source\Repos\Or-Bust\obj\Release\netcoreapp2.0\OrBust.dll
+C:\Users\Benjamin Burgess\Source\Repos\Or-Bust\obj\Release\netcoreapp2.0\OrBust.pdb
+C:\Users\Benjamin Burgess\Source\Repos\Or-Bust\bin\Release\netcoreapp2.0\wwwroot\favicon.ico
